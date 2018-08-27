@@ -165,13 +165,11 @@ fl.runScript(fl.configURI + "Javascript/TexturePacker.jsfl");
 				delete t;
 				
 				if (!options.dryrun) {
-					alert("TexturePacker start");
 					var packer = new TexturePacker(options.texturePacker);
 					result = packer.pack({
 						'folder': workDir,
 						'sheet': sheetURI
 					});
-					alert("TexturePacker done");
 					logger.info("Texture Packer:\n" + result.log);
 				}
 			} 
